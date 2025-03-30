@@ -1,0 +1,88 @@
+:root{
+    --dark: #1c1c1c;
+    --dark-blue: #1F2937;
+    --full-white: #FFFFFF;
+    --normal--green: #4ADF86;
+    --grey: #D5D4D8;
+}
+
+*{
+    all: none;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100%;
+
+    background-color: var(--dark);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    height: 95vh;
+    width: 95%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    max-width: 550px;
+    max-height: 660px;
+
+    background: var(--dark-blue);
+}
+
+#title-section{
+    min-width: 440px;
+}
+
+#title, #subtitle{
+    font-family: "Karla", sans-serif;
+    
+    margin: 0%;
+}
+
+#title{
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--full-white);
+}
+
+#title span{
+    color: var(--normal--green);
+}
+
+#subtitle{
+    font-weight:normal;
+    color: var(--grey);
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* #pwd-length-section{
+    min-width: none;
+    min-height: none;
+} */
+
+#pwd-length-section #label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pwd-length-section #password-length{
+    min-width: 440px;
+}
+
+
+.blue-border{
+    border: 1px dotted blue;
+}
+
