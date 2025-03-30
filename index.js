@@ -11,6 +11,8 @@ const symbols_btn = document.querySelector("#symbols-btn");
 const numbers_btn = document.querySelector("#numbers-btn");
 
 const generate_pwd_btn = document.querySelector("#generate-pwd-btn")
+const cpy_btn = document.querySelector("#cpy-btn");
+
 
 var containSymbols = true;
 var containNumbers = true;
@@ -59,4 +61,14 @@ numbers_btn.addEventListener("click",()=>{
 generate_pwd_btn.addEventListener("click",()=>{
     generate_random_password();
     password_field.value = generate_random_password(size, containSymbols, containNumbers);
+})
+
+console.log(generate_pwd_btn)
+
+cpy_btn.addEventListener("click",()=>{
+    password_field.select();
+    password_field.setSelectionRange(0,999999);
+    navigator.clipboard.writeText(password_field.value);
+
+    alert("Password copied.");
 })
