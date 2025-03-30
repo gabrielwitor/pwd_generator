@@ -196,6 +196,7 @@ hr{
     padding-left: 10px;
     padding-right: 40px;
     color: var(--bright-green);
+    font-family: "Inter", sans-serif;
 }
 
 #cpy-btn{
